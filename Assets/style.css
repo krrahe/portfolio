@@ -1,0 +1,154 @@
+/*colors i liked off the internet and basis of page */
+:root {
+  --1: #d85c27;
+  --2: #a96762;
+  --3: #14365d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*push the links to the right and have some space between them*/
+nav {
+  text-align: right;
+  justify-content: space-around;
+  padding-right: 5px;
+}
+
+/*Set the fonts i want and did my best to center items*/
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  background-color: var(--2);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-size-adjust: 15px;
+}
+
+header {
+  background-color: var(--1);
+  display: fixed;
+  height: 80px;
+  border: solid 5% var(--2);
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+
+img {
+  height: 150px;
+  width: 1;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--1);
+  height: 70px;
+  padding-top: 2em;
+}
+
+.me {
+  height: 150px;
+  width: 1;
+  display: flex;
+  padding-left: 50%;
+}
+
+/*header padding and alignment*/
+.intro {
+  text-align: center;
+  padding-top: 1em;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: var(--3);
+  display: flex;
+}
+
+/*make the boxes move with the page format*/
+.stuff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--2);
+  padding-left: 7.5em;
+  padding-right: auto;
+}
+
+/* Specifies the boxes and how pretty they are */
+.box {
+  width: 30%;
+  height: 250px;
+  border: solid 5px black;
+  text-align: center;
+  transition: transform 0.2s;
+  background-image: linear-gradient(rgba(128, 128, 128, 0.3) 0%,
+      rgba(128, 128, 128, 0.6) 100%);
+}
+
+/*does the cool little pop out thing also change color to help with contrast */
+.box:hover {
+  transform: scale(1.25);
+  background-color: grey;
+}
+
+a:link {
+  color: var(--3);
+}
+
+/*I think the blue clicked on looks weird and 90s*/
+a:visited {
+  color: black;
+}
+
+/*Made it change color to make it obv that it was a link*/
+a:hover {
+  color: white;
+}
+
+/*Gave the first project a larger box and emphasis*/
+.first {
+  width: 90%;
+  height: 200px;
+  border: solid 5px black;
+  text-align: center;
+  align-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  transition: transform 0.2s;
+
+}
+
+.first:hover {
+  background-color: grey;
+  transform: scale(1.15);
+}
+
+.project-pics {
+  height: auto;
+  width: auto;
+  align-content: right;
+  background-color: var(--3);
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.first-pic {
+  height: auto;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
